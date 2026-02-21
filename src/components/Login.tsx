@@ -28,7 +28,7 @@ export default function Login({ onLogin }: LoginProps) {
         className="glass-card p-8 space-y-8"
       >
         <div className="text-center space-y-2">
-          <div className="mx-auto w-16 h-16 bg-zinc-900 text-white rounded-2xl flex items-center justify-center shadow-xl mb-4">
+          <div className="mx-auto w-16 h-16 bg-white text-emerald-600 rounded-full flex items-center justify-center shadow-xl mb-4 border border-emerald-100">
             <ShieldCheck size={32} />
           </div>
           <h1 className="text-2xl font-bold tracking-tight text-zinc-900">Acceso Restringido</h1>
@@ -44,7 +44,7 @@ export default function Login({ onLogin }: LoginProps) {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 placeholder="Ingresa tu usuario"
-                className={`w-full bg-white border ${error ? 'border-red-500 ring-1 ring-red-500' : 'border-zinc-200'} text-zinc-900 text-sm rounded-xl focus:ring-zinc-500 focus:border-zinc-500 block p-4 transition-all outline-none`}
+                className={`w-full bg-white border ${error ? 'border-red-500 ring-1 ring-red-500' : 'border-zinc-200'} text-zinc-900 text-sm rounded-xl focus:ring-emerald-500 focus:border-emerald-500 block p-4 transition-all outline-none`}
               />
               <div className="absolute inset-y-0 right-0 flex items-center pr-4 text-zinc-400">
                 <LogIn size={18} />
@@ -64,7 +64,7 @@ export default function Login({ onLogin }: LoginProps) {
           <motion.button
             whileTap={{ scale: 0.98 }}
             type="submit"
-            className="w-full bg-zinc-900 text-white py-4 rounded-xl font-bold text-sm uppercase tracking-widest shadow-lg shadow-zinc-200 hover:bg-zinc-800 transition-colors"
+            className="w-full bg-emerald-600 text-white py-4 rounded-xl font-bold text-sm uppercase tracking-widest shadow-lg shadow-emerald-900/20 hover:bg-emerald-700 transition-colors"
           >
             Entrar
           </motion.button>
