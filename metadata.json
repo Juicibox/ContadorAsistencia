@@ -1,0 +1,5 @@
+{
+  "name": "Asistencia FICC 2026",
+  "description": "Aplicación para el conteo de asistencia con filtros por lugar y área artística.",
+  "requestFramePermissions": []
+}
