@@ -29,7 +29,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-zinc-50 py-12 px-4 relative">
+    <div className={`min-h-screen py-12 px-4 relative transition-colors duration-500 ${isAuthenticated ? 'bg-zinc-50' : 'login-bg'}`}>
       {isAuthenticated ? (
         <>
           <div className="max-w-md mx-auto flex justify-end mb-4">
