@@ -14,3 +14,18 @@ body {
   @apply bg-white/80 backdrop-blur-md border border-zinc-200 shadow-sm rounded-2xl;
 }
 
+.login-bg {
+  background: radial-gradient(circle at 50% 20%, #059669 0%, #064e3b 100%);
+  position: relative;
+}
+
+.login-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.15) 0%, transparent 40%);
+  pointer-events: none;
+}
