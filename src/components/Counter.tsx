@@ -161,7 +161,7 @@ export default function Counter() {
                 }))}
                 className={`py-3 px-4 rounded-xl text-sm font-medium transition-all ${
                   filters.place === p 
-                    ? 'bg-zinc-900 text-white shadow-lg shadow-zinc-200' 
+                    ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/10' 
                     : 'bg-white text-zinc-600 border border-zinc-200 hover:border-zinc-300'
                 }`}
               >
@@ -184,7 +184,7 @@ export default function Counter() {
               <select
                 value={filters.subPlace}
                 onChange={(e) => setFilters(f => ({ ...f, subPlace: e.target.value }))}
-                className="w-full bg-white border border-zinc-200 text-zinc-900 text-sm rounded-xl focus:ring-zinc-500 focus:border-zinc-500 block p-3 appearance-none cursor-pointer hover:border-zinc-300 transition-all font-medium"
+                className="w-full bg-white border border-zinc-200 text-zinc-900 text-sm rounded-xl focus:ring-emerald-500 focus:border-emerald-500 block p-3 appearance-none cursor-pointer hover:border-zinc-300 transition-all font-medium"
               >
                 {currentSubPlaces.map(s => (
                   <option key={s} value={s}>{s}</option>
@@ -204,7 +204,7 @@ export default function Counter() {
               <select
                 value={filters.municipality}
                 onChange={(e) => setFilters(f => ({ ...f, municipality: e.target.value }))}
-                className="w-full bg-white border border-zinc-200 text-zinc-900 text-sm rounded-xl focus:ring-zinc-500 focus:border-zinc-500 block p-3 appearance-none cursor-pointer hover:border-zinc-300 transition-all font-medium"
+                className="w-full bg-white border border-zinc-200 text-zinc-900 text-sm rounded-xl focus:ring-emerald-500 focus:border-emerald-500 block p-3 appearance-none cursor-pointer hover:border-zinc-300 transition-all font-medium"
               >
                 {MUNICIPALITIES.map(m => (
                   <option key={m} value={m}>{m}</option>
@@ -222,7 +222,7 @@ export default function Counter() {
               <select
                 value={filters.area}
                 onChange={(e) => setFilters(f => ({ ...f, area: e.target.value as Area }))}
-                className="w-full bg-white border border-zinc-200 text-zinc-900 text-sm rounded-xl focus:ring-zinc-500 focus:border-zinc-500 block p-3 appearance-none cursor-pointer hover:border-zinc-300 transition-all font-medium"
+                className="w-full bg-white border border-zinc-200 text-zinc-900 text-sm rounded-xl focus:ring-emerald-500 focus:border-emerald-500 block p-3 appearance-none cursor-pointer hover:border-zinc-300 transition-all font-medium"
               >
                 {AREAS.map(a => (
                   <option key={a} value={a}>{a}</option>
@@ -267,7 +267,7 @@ export default function Counter() {
               exit={{ opacity: 0, scale: 0.95 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => handleAdd(1)}
-              className="flex-1 bg-zinc-900 text-white h-24 rounded-3xl flex flex-col items-center justify-center gap-1 shadow-xl shadow-zinc-200 hover:bg-zinc-800 transition-colors"
+              className="flex-1 bg-emerald-600 text-white h-24 rounded-3xl flex flex-col items-center justify-center gap-1 shadow-xl shadow-emerald-900/20 hover:bg-emerald-700 transition-colors"
             >
               <Plus size={32} />
               <span className="font-bold text-lg uppercase tracking-wide">Contar</span>
@@ -286,12 +286,12 @@ export default function Counter() {
                 value={manualCount}
                 onChange={(e) => setManualCount(e.target.value)}
                 placeholder="0"
-                className="flex-1 bg-white border-2 border-zinc-200 rounded-3xl px-6 text-3xl font-bold text-center focus:border-zinc-900 outline-none transition-all"
+                className="flex-1 bg-white border-2 border-zinc-200 rounded-3xl px-6 text-3xl font-bold text-center focus:border-emerald-600 outline-none transition-all"
               />
               <button
                 onClick={() => handleAdd(parseInt(manualCount) || 0)}
                 disabled={!manualCount || parseInt(manualCount) <= 0}
-                className="bg-zinc-900 text-white px-8 rounded-3xl flex items-center justify-center shadow-xl shadow-zinc-200 hover:bg-zinc-800 disabled:opacity-50 transition-all font-bold uppercase tracking-widest text-sm"
+                className="bg-emerald-600 text-white px-8 rounded-3xl flex items-center justify-center shadow-xl shadow-emerald-900/20 hover:bg-emerald-700 disabled:opacity-50 transition-all font-bold uppercase tracking-widest text-sm"
               >
                 Enviar
               </button>
