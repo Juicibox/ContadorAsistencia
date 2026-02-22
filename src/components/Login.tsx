@@ -28,7 +28,7 @@ export default function Login({ onLogin }: LoginProps) {
         className="glass-card p-8 space-y-8"
       >
         <div className="text-center space-y-2">
-          <img src="/img/logo.png" alt="Logo" className="mx-auto w-24 h-24 object-contain+mb-4" />
+          <img src="/img/logo.png" alt="Logo" className="mx-auto w-24 h-24 object-contain mb-4" />
           <h1 className="text-2xl font-bold tracking-tight text-zinc-900">Acceso Restringido</h1>
           <p className="text-zinc-500 text-sm">Identifícate para gestionar la asistencia</p>
         </div>
