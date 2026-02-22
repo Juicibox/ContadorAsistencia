@@ -7,7 +7,7 @@ import { supabase } from '../lib/supabase';
 const PLACES: Place[] = ['Abierto', 'Cerrado'];
 const AREAS: Area[] = ['Danza', 'Música', 'Teatro', 'Artes Visuales', 'Literatura', 'Cinematografia'];
 const MUNICIPALITIES: Municipality[] = [
-  'Tunja', 'Duitama'.'Sogamoso', 'Paipa'
+  'Tunja', 'Duitama','Sogamoso', 'Paipa'
 ];
 const SUB_PLACES_ABIERTO = ['Plaza de Bolivar', 'Parque principal'];
 const SUB_PLACES_CERRADO = ['Teatro Bicentenario', 'Auditorio Boyaquira', 'Casa Teb'];
