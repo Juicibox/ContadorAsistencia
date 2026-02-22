@@ -70,7 +70,7 @@ export default function Login({ onLogin }: LoginProps) {
 
         <div className="pt-4 text-center">
           <p className="text-[10px] text-zinc-400 uppercase tracking-widest">
-            Sistema de Gestión de Cultura
+            Sistema de Gestión de Asistencia
           </p>
         </div>
       </motion.div>
