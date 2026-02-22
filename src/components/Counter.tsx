@@ -17,7 +17,7 @@ export default function Counter() {
     place: 'Abierto',
     subPlace: SUB_PLACES_ABIERTO[0],
     area: 'Danza',
-    municipality: 'San Salvador'
+    municipality: 'Tunja'
   });
   
   const [records, setRecords] = useState<AttendanceRecord[]>([]);
