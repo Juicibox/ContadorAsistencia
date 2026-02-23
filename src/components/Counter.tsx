@@ -5,7 +5,7 @@ import { Place, Area, AttendanceRecord, FilterState, Municipality } from '../typ
 import { supabase } from '../lib/supabase';
 
 const PLACES: Place[] = ['Abierto', 'Cerrado'];
-const AREAS: Area[] = ['Danza', 'Música', 'Teatro', 'Artes Visuales', 'Literatura', 'Cinematografia', 'Reunión];
+const AREAS: Area[] = ['Danza', 'Música', 'Teatro', 'Artes Visuales', 'Literatura', 'Cinematografia', 'Reunión'];
 const MUNICIPALITIES: Municipality[] = [
   'Tunja', 'Duitama','Sogamoso', 'Paipa'
 ];
