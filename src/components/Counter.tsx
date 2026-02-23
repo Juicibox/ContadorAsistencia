@@ -5,12 +5,12 @@ import { Place, Area, AttendanceRecord, FilterState, Municipality } from '../typ
 import { supabase } from '../lib/supabase';
 
 const PLACES: Place[] = ['Abierto', 'Cerrado'];
-const AREAS: Area[] = ['Danza', 'Música', 'Teatro', 'Artes Visuales', 'Literatura', 'Cinematografia'];
+const AREAS: Area[] = ['Danza', 'Música', 'Teatro', 'Artes Visuales', 'Literatura', 'Cinematografia', 'Reunión];
 const MUNICIPALITIES: Municipality[] = [
   'Tunja', 'Duitama','Sogamoso', 'Paipa'
 ];
 const SUB_PLACES_ABIERTO = ['Plaza de Bolivar', 'Parque principal'];
-const SUB_PLACES_CERRADO = ['Teatro Bicentenario', 'Auditorio Boyaquira', 'Casa Teb'];
+const SUB_PLACES_CERRADO = ['Teatro Bicentenario', 'Auditorio Boyaquira', 'Casa Teb', 'Auditorio Música'];
 
 export default function Counter() {
   const [filters, setFilters] = useState<FilterState>({
